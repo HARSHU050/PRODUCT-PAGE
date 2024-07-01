@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="gallery">
+               <img src="Screenshot 2024-05-24 191456.png" alt="" id="productImg">
+               <div class="controls">
+                <span class="btn ">
+
+                </span>
+                <span class="btn">
+
+                </span>
+                <span class="btn">
+
+                </span>
+               </div>
+            </div>
+            <div class="details">
+                  <h1>Women Grey Textured Blazer</h1>
+                  <h4>₹ 2,599.00</h4>
+                  <h5 class="strike">₹ 4,000.00</h5>
+                  <h3>30% off </h3>
+                  <p>Introducing the Van Heusen stylish grey blazer for women. this cotton blazer with textured pattern is perfect for casual occasions. the regular fit and one-button suit front ensure a comfortable and flattering fit, while the long sleeves add a touch of sophistication. elevate your wardrobe with this versatile and trendy blazer that seamlessly transitions from day to night. give yourself the stylish edge you deserve with the Van Heusen grey blazer.</p>
+                <form action="">
+                    <div class="size-select">
+                        <p>Size</p>
+                        <label for="small">
+                            <input type="radio" name="size" id="small">
+                            <span>S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size" id="medium">
+                            <span>M</span>
+                        </label>
+                        
+                        <label for="large">
+                            <input type="radio" name="size" id="large">
+                            <span>L</span>
+                        </label>
+                        <label for="x-large">
+                            <input type="radio" name="size" id="x-large">
+                            <span>XL</span>
+                        </label>
+                    </div>
+                    <div class="color-select">
+                        <p>Color</p>
+                        <label for="black">
+                            <input type="radio" name="color" id="black">
+                            <span class="color-1 active"></span>
+                        </label>
+                        <label for="maroon">
+                            <input type="radio" name="color" id="maroon">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="grey">
+                            <input type="radio" name="color" id="grey">
+                            <span class="color-3"></span>
+                        </label>
+                        
+                    </div>
+                    <div class="quantity-select">
+                        <p>Quantity</p>
+                        <input type="number" value="1">
+                    </div>
+                    <button>Buy Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        let productImg =document.getElementById("productImg");
+      
+        let btn =document.getElementsByClassName("btn");
+        btn[0].onclick=function(){
+            productImg.src= "Screenshot 2024-05-24 191947 - Copy.png";
+            for(bt of btn){
+                bt.classList.remove("active");
+
+            }
+          this.classList.add("active");
+        }
+        btn[1].onclick=function(){
+            productImg.src="Screenshot 2024-05-24 192041.png";
+           
+            for(bt of btn){
+                bt.classList.remove("active");
+
+            }
+          this.classList.add("active");
+        }
+        btn[2].onclick=function(){
+            productImg.src="Screenshot 2024-05-24 191456.png";
+          
+            for(bt of btn){
+                bt.classList.remove("active");
+
+            }
+          this.classList.add("active");
+        }
+    </script>
+
+
+
+ 
+</body>
+</html>
